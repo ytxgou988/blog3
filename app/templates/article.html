@@ -1,0 +1,21 @@
+<!-- extend layout -->
+{% extends "layout.html" %}
+{% block sidebar %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <h1><b>{{posts.p_title}}</b></h1>
+        </div>
+        <div class="span4 offset 4">
+            <i>{{posts.times}}</i>
+            <i><a href="/edit/{{posts.id}}">Edit</a></i>
+            <i><a href="/delete/{{posts.id}}">Delete</a></i>
+        <div class="span12">
+            <h2>{{posts.p_content}}</h2>
+        </div>
+    </div>
+</div>
+{% endblock %}

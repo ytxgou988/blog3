@@ -1,0 +1,22 @@
+<!-- extend layout -->
+{% extends "layout.html" %}
+
+{% block sidebar %}
+        sidebar1
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="span10">
+        <h1>Yuto</h1><br>
+        <h2>That is it</h2>
+
+        {% for post in posts %}
+        <p>
+            <b>{{post.title}}</b><br>
+            {{post.content}}
+        </p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+

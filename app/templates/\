@@ -1,0 +1,32 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block sidebar %}
+sidebar
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="span4">
+        <h1>Write something</h>
+    </div>
+    <div class="span9">
+        <form action="" method="post" name="post">
+            <table>
+                <tr>
+                    <td>{{form.post(size = 30, maxlength = 1024) }}</td>
+                    <td>
+                        {% for error in form.error.post %}
+                        <span style="color :red;">[{{error}}]</span><br>
+                        {% endfor %}
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Post!"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

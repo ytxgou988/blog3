@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block sidebar %}
+        sidebar
+{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Welcome!</h1>
+        <div class="span10">
+        <tr>
+            {%for post in posts %}
+            <td><h1><a href="/article/{{post.id}}">{{post.p_title}}</a></h1></td>
+            <td><b>{{post.p_content}}</b></td>
+            {% endfor %}
+        </tr>
+        </div>
+    </div>
+</div>
+{% endblock %}

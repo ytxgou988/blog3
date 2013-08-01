@@ -1,18 +1,20 @@
 {% extends "layout.html" %}
-{% block sidebar %}
-        sidebar
-{% endblock %}
+
 {% block content %}
-<div class="container">
-    <h1>Welcome!</h1>
-        <div class="span10">
-        <tr>
+        <div class="conl basediv">
+        <h1>Welcome!</h1>
             {%for post in posts %}
-            <td><h1><a href="/article/{{post.id}}">{{post.p_title}}</a></h1></td>
-            <td><b>{{post.p_content}}</b></td>
+                <div class="line">
+                </div>
+                <h2><a href="/article/{{post.id}}">{{post.p_title}}</a></h2>
+                <p class="muted">
+                <small>{{post.times}}</small>
+                </p>
+                <div class="media">
+                    <div class="media-body">
+                        <p>{{post.p_content}}</p>
+                    </div>
+                </div>
             {% endfor %}
-        </tr>
         </div>
-    </div>
-</div>
 {% endblock %}

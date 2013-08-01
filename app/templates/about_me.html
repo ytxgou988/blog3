@@ -7,15 +7,35 @@
 {% block content %}
 <div class="row">
     <div class="span10">
-        <h1>Yuto</h1><br>
-        <h2>That is it</h2>
+        <hr>
+        <h3>Welcome to my blog<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Have a good time</h3>
+        <hr>
+        <div class="span10">
+            <dl class="dl-horizontal">
+                <dt><h4>Name:</h4></dt>
+                <dd><h5>Yu Zheng</h5></dd>
+                <br>
+                <dt><h4>Birthday:</h4></dt>
+                <dd><h5>1991.10.04</h5></dd>
+                <br>
+                <dt><h4>Location:</h4></dt>
+                <dd><h5>Beijin</h5></dd>
+                <br>
+                <dt><h4>Weibo:</h4></dt>
+                <dd><h5><a href="http://weibo.com/ytxgou988">http://weibo.com/ytxgou988</a></h5></dd>
+                <br>
+                <dt><h4>Github:</h4></dt>
+                <dd><h5><a href="https://github.com/ytxgou988">https://github.com/ytxgou988</a></h5></dd>
 
-        {% for post in posts %}
-        <p>
-            <b>{{post.title}}</b><br>
-            {{post.content}}
-        </p>
-        {% endfor %}
+
+            </dl>
+        </div>
+
+
     </div>
 </div>
 {% endblock %}

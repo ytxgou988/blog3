@@ -10,7 +10,7 @@ sidebar
         <h1>Write something</h>
     </div>
     <div class="span9">
-        <form action="" method="post" name="post">
+        <form class='form-horizontal' action="" method="post" name="post">
             {{form.hidden_tag()}}
             <table>
                 <tr>
@@ -23,7 +23,10 @@ sidebar
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="Post!"></td>
+                    <td><button type="submit" class="btn btn-primary">Post</button>
+                        <button type='cancel' class="btn" href='/index'>Cancel</button>
+                        
+                        <!--input type="submit" value="Post!"--></td>
                 </tr>
             </table>
         </form>

@@ -1,0 +1,15 @@
+#!/usr/bin/python
+import os
+os.system('virtualenv flask')
+os.system('. flask/bin/activate')
+os.system('flask/bin/pip install flask')
+os.system('flask/bin/pip install flask-sqlalchemy')
+os.system('flask/bin/pip install sqlalchemy')
+os.system('flask/bin/pip install sqlalchemy-migrate')
+os.system('flask/bin/pip install flask-wtf')
+os.system('flask/bin/pip install flask-login')
+os.system('flask/bin/pip install flask-openid')
+os.system('flask/bin/pip install flask-babel')
+os.system('flask/bin/pip install flup')
+os.system('flask/bin/pip install flask-mail')
+os.system('flask/bin/pip install flask-whooshalchemy')
